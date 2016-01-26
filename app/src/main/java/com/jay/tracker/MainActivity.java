@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.jay.tracker.BackgroundService.LocationService;
+import com.jay.tracker.BackgroundService.TelephonyService;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, LocationService.class);
+        Intent intent = new Intent(this, TelephonyService.class);
         startService(intent);
     }
 }

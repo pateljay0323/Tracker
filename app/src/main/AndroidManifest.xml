@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service android:name=".BackgroundService.LocationService" />
+        <service android:name=".BackgroundService.TelephonyService" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
